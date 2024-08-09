@@ -26,6 +26,28 @@ body {
     transform: translateY(-24vh);
 }
 
+#m {
+    float: right;
+    transform: translateY(-28vh);
+    margin-right: 1vw;
+    padding: 10px 15px;
+    background-color: #12121277;
+    border: 1px solid #ffffff77;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+#m:hover {
+    cursor: pointer;
+    background-color: #12121299;
+    border-color: #ffffff99;
+}
+
+#m:active {
+    background-color: #121212bb;
+    border-color: #ffffffbb;
+}
+
 #container {
     background-color: #12121277;
     padding: 2.5vh 0;
