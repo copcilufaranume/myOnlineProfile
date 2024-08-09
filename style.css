@@ -78,3 +78,11 @@ body {
 .socials:hover {
     transform: translateY(-10px);
 }
+
+@media (max-width: 940px) {
+    #container {
+        background-color: #12121200;
+        border-color: #ffffff00;
+        width: 100%;
+    }
+}
