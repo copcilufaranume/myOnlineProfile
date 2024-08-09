@@ -9,3 +9,12 @@ function muteOrUnmute() {
         video.muted = false;
     }
 }
+
+function buttonMuteOrUnmute() {
+    if (video.muted == false) {
+        video.muted = true;
+    } else if (video.muted == true) {
+        video.volume = 0.5;
+        video.muted = false;
+    }
+}
