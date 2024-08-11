@@ -57,10 +57,12 @@ body {
     width: 30%;
     text-align: center;
     z-index: 1;
+    transition: 0.3s;
 }
 
 #profilePic {
     border-radius: 100%;
+    transition: 0.3s;
 }
 
 #name {
@@ -101,10 +103,88 @@ body {
     transform: translateY(-10px);
 }
 
-@media (max-width: 940px) {
+@media (max-width: 1400px) {
+    #container {
+        width: 50%;
+    }
+}
+
+@media (max-width: 800px) {
+    #container {
+        width: 75%;
+    }
+}
+
+@media (max-width: 525px) {
+    .socials {
+        height: 40px;
+    }
+}
+
+@media (max-width: 400px) {
+    #profilePic {
+        width: 125px;
+    }
+
+    #name {
+        font-size: 1.5em;
+    }
+
+    #origin {
+        font-size: 1.2em;
+    }
+
+    .socials {
+        height: 30px;
+        transform: translateY(-0.5em);
+    }
+}
+
+@media (max-width: 350px) {
+    #proTip {
+        text-align: center;
+    }
+
+    #m {
+        float: none;
+        transform: translateY(-25vh);
+        display: block;
+        margin-inline: auto;
+    }
+
     #container {
         background-color: #12121200;
         border-color: #ffffff00;
         width: 100%;
+    }
+
+    #profilePic {
+        width: 100px;
+    }
+
+    #name {
+        font-size: 1.25em;
+    }
+
+    #origin {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 250px) {
+    #profilePic {
+        width: 75px;
+    }
+
+    #name {
+        font-size: 1em;
+    }
+
+    #origin {
+        font-size: 0.75em;
+    }
+
+    .socials {
+        height: 19px;
     }
 }
