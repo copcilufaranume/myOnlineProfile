@@ -7,12 +7,10 @@
         <link rel="icon" href="img/ro-icon.png" />
         <link rel="stylesheet" href="style.css" />
     </head>
-    <body onkeydown="muteOrUnmute()">
+    <body>
         <video autoplay loop muted id="bgVideo">
             <source src="video/bg-video.mp4" type="video/mp4" />
         </video>
-        <p id="proTip">(press "m" to mute/unmute page)</p>
-        <button onclick="buttonMuteOrUnmute()" id="m">m</button>
         <div id="container">
             <img src="img/my-profile-pic.png" alt="myProfilePic" id="profilePic" />
             <h1 id="name">Gordon_OmLiber</h1>
@@ -36,6 +34,8 @@
                 ><img src="img/reddit-icon.png" alt="redditIcon" class="socials"
             /></a>
         </div>
+        <input type="range" min="0" max="100" value="0" class="slider" id="volumeRange" />
+        <p id="volumeInfo">Volume: 0%</p>
 
         <script src="index.js"></script>
     </body>
