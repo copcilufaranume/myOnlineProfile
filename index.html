@@ -3,6 +3,10 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="My personal website with links to my socials and a nice song you can listen to in the background"
+        />
         <title>@Gordon_OmLiber</title>
         <link rel="icon" href="img/ro-icon.png" />
         <link rel="stylesheet" href="style.css" />
@@ -11,31 +15,33 @@
         <video autoplay loop muted id="bgVideo">
             <source src="video/bg-video.mp4" type="video/mp4" />
         </video>
-        <div id="container">
-            <img src="img/my-profile-pic.png" alt="myProfilePic" id="profilePic" />
-            <h1 id="name">Gordon_OmLiber</h1>
-            <p id="origin">I am from: <label id="ro">man</label></p>
-            <a href="mailto:copcilufaranume@gmail.com" target="_blank"
-                ><img src="img/gmail-icon.png" alt="gmailIcon" class="socials"
-            /></a>
-            <a href="https://www.youtube.com/@copcilufaranume" target="_blank"
-                ><img src="img/yt-icon.png" alt="ytIcon" class="socials"
-            /></a>
-            <a href="https://discordapp.com/users/796067598835515422" target="_blank"
-                ><img src="img/disc-icon.png" alt="discIcon" class="socials"
-            /></a>
-            <a href="https://github.com/copcilufaranume" target="_blank"
-                ><img src="img/github-icon.png" alt="gitHubIcon" class="socials"
-            /></a>
-            <a href="https://steamcommunity.com/profiles/76561199470285374/" target="_blank"
-                ><img src="img/steam-icon.png" alt="steamIcon" class="socials"
-            /></a>
-            <a href="https://www.reddit.com/user/Civil_Competition569/" target="_blank"
-                ><img src="img/reddit-icon.png" alt="redditIcon" class="socials"
-            /></a>
+        <div id="parentContainer">
+            <div id="container">
+                <img src="img/my-profile-pic.png" alt="myProfilePic" id="profilePic" />
+                <h1 data-value="Gordon_OmLiber" id="name">Gordon_OmLiber</h1>
+                <p id="origin">I am from: <label id="ro">man</label></p>
+                <a href="mailto:copcilufaranume@gmail.com" target="_blank"
+                    ><img src="img/gmail-icon.png" alt="gmailIcon" class="socials"
+                /></a>
+                <a href="https://www.youtube.com/@copcilufaranume" target="_blank"
+                    ><img src="img/yt-icon.png" alt="ytIcon" class="socials"
+                /></a>
+                <a href="https://discordapp.com/users/796067598835515422" target="_blank"
+                    ><img src="img/disc-icon.png" alt="discIcon" class="socials"
+                /></a>
+                <a href="https://github.com/copcilufaranume" target="_blank"
+                    ><img src="img/github-icon.png" alt="gitHubIcon" class="socials"
+                /></a>
+                <a href="https://steamcommunity.com/profiles/76561199470285374/" target="_blank"
+                    ><img src="img/steam-icon.png" alt="steamIcon" class="socials"
+                /></a>
+                <a href="https://www.reddit.com/user/Civil_Competition569/" target="_blank"
+                    ><img src="img/reddit-icon.png" alt="redditIcon" class="socials"
+                /></a>
+            </div>
+            <input type="range" min="0" max="100" value="0" class="slider" id="volumeRange" />
+            <p id="volumeInfo">Volume: 0%</p>
         </div>
-        <input type="range" min="0" max="100" value="0" class="slider" id="volumeRange" />
-        <p id="volumeInfo">Volume: 0%</p>
 
         <script src="index.js"></script>
     </body>
