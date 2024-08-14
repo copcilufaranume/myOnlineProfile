@@ -2,6 +2,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 25vh 0;
     margin-bottom: 0;
+    overflow: hidden;
 }
 
 :root {
@@ -32,6 +33,7 @@ body {
     border: 1px solid #ffffff77;
     border-radius: 20px;
     margin: auto;
+    min-width: max-content;
     width: 30%;
     text-align: center;
     z-index: 1;
@@ -119,27 +121,62 @@ body {
     transform: translateY(-0.5em);
 }
 
+#moreInfoContainer {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    background-color: #12121277;
+    border: 1px solid #ffffff77;
+    padding: 5px 15px;
+    width: 30%;
+    min-height: calc(100vh - 12px);
+    max-height: calc(100vh - 12px);
+    overflow-y: scroll;
+    transition: 0.3s;
+}
+
+#aboutMeTitle {
+    font-size: 1.75em;
+    text-align: center;
+}
+
+.aboutMeText {
+    font-size: 1.25em;
+}
+
 @media (max-width: 1400px) {
-    #container {
-        width: 50%;
+    .socials {
+        height: 45px;
     }
-    .slider {
-        width: 45%;
+    #moreInfoContainer {
+        width: 28%;
     }
 }
 
-@media (max-width: 800px) {
-    #container {
-        width: 75%;
+@media (max-width: 1000px) {
+    body {
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        overflow: scroll;
     }
-    .slider {
+    #moreInfoContainer {
+        position: relative;
+        display: block;
+        margin-inline: auto;
         width: 70%;
+        min-height: max-content;
+        max-height: none;
+        overflow: unset;
     }
 }
 
 @media (max-width: 525px) {
     .socials {
         height: 40px;
+    }
+    .slider {
+        width: 45%;
     }
 }
 
@@ -159,6 +196,10 @@ body {
     .socials {
         height: 30px;
         transform: translateY(-0.5em);
+    }
+
+    #moreInfoContainer {
+        width: 85%;
     }
 }
 
@@ -184,6 +225,14 @@ body {
     #volumeInfo {
         font-size: 1em;
     }
+
+    #moreInfoContainer p {
+        font-size: 1em;
+    }
+
+    #moreInfoContainer h2 {
+        font-size: 1.25em;
+    }
 }
 
 @media (max-width: 250px) {
@@ -201,6 +250,14 @@ body {
 
     .socials {
         height: 19px;
+    }
+
+    #moreInfoContainer p {
+        font-size: 0.75em;
+    }
+
+    #moreInfoContainer h2 {
+        font-size: 1em;
     }
 }
 
