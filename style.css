@@ -59,8 +59,8 @@ body {
 
 #profilePic:hover {
     color: #111111;
-    background: #e7ff2f;
-    box-shadow: 0 0 100px #e7ff2f;
+    background: #ffffff;
+    box-shadow: 0 0 100px #ffffff;
     cursor: pointer;
 }
 
