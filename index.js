@@ -60,7 +60,7 @@ function greet() {
         selectedSound.onended = () => {
             video.muted = false;
         };
-    } else {
+    } else if (video.muted || video.volume == 0) {
         selectedSound.play();
     }
 }
