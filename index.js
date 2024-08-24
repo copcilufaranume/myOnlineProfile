@@ -43,15 +43,31 @@ name.onmouseover = (event) => {
 //sound on profile picture click
 
 const greetSound = new Audio("audio/hl-gordon-greetings.mp3");
+const greetSound2 = new Audio("audio/hl-greetings.mp3");
+const donutsSound = new Audio("audio/hl-donuts.mp3");
+const scientistScream = new Audio("audio/hl-scientist-scream.mp3");
+const bothered = new Audio("audio/hl-bothered.mp3");
+
+const greetSounds = [greetSound, greetSound2, donutsSound, scientistScream, bothered];
 
 function greet() {
-    greetSound.play();
+    const soundIndex = Math.floor(Math.random() * 5);
+    const selectedSound = greetSounds[soundIndex];
+
+    if (!video.muted) {
+        video.muted = true;
+        selectedSound.play();
+        selectedSound.onended = () => {
+            video.muted = false;
+        };
+    } else {
+        selectedSound.play();
+    }
 }
 
-//other sound
-
-const useSound = new Audio("audio/hl-use-key.mp3");
+//use sound
 
 function use() {
+    const useSound = new Audio("audio/hl-use-key.mp3");
     useSound.play();
 }
