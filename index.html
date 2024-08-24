@@ -11,14 +11,19 @@
         <link rel="icon" href="img/ro-icon.png" />
         <link rel="stylesheet" href="style.css" />
     </head>
-    <body>
+    <body onclick="use()">
         <video autoplay loop muted id="bgVideo">
             <source src="video/bg-video.mp4" type="video/mp4" />
         </video>
 
         <div id="parentContainer">
             <div id="container">
-                <img src="img/my-profile-pic.png" alt="myProfilePic" id="profilePic" />
+                <img
+                    src="img/my-profile-pic.png"
+                    alt="myProfilePic"
+                    id="profilePic"
+                    onclick="greet()"
+                />
                 <h1 data-value="Gordon_OmLiber" id="name">Gordon_OmLiber</h1>
                 <p id="origin">I am from: <label id="ro">man</label></p>
                 <a href="mailto:copcilufaranume@gmail.com" target="_blank"
