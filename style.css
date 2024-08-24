@@ -57,6 +57,12 @@ body {
     transition: 0.3s;
 }
 
+#profilePic:hover {
+    color: #111111;
+    background: #e7ff2f;
+    box-shadow: 0 0 100px #e7ff2f;
+}
+
 #name {
     display: block;
     width: max-content;
