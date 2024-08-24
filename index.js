@@ -54,7 +54,7 @@ function greet() {
     const soundIndex = Math.floor(Math.random() * 5);
     const selectedSound = greetSounds[soundIndex];
 
-    if (!video.muted) {
+    if (!video.muted || !video.volume == 0) {
         video.muted = true;
         selectedSound.play();
         selectedSound.onended = () => {
@@ -69,5 +69,6 @@ function greet() {
 
 function use() {
     const useSound = new Audio("audio/hl-use-key.mp3");
+    useSound.volume = 0.5;
     useSound.play();
 }
