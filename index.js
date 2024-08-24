@@ -39,3 +39,19 @@ name.onmouseover = (event) => {
         iterations += 1 / 3;
     }, 30);
 };
+
+//sound on profile picture click
+
+const greetSound = new Audio("audio/hl-gordon-greetings.mp3");
+
+function greet() {
+    greetSound.play();
+}
+
+//other sound
+
+const useSound = new Audio("audio/hl-use-key.mp3");
+
+function use() {
+    useSound.play();
+}
