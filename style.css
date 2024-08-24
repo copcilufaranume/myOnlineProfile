@@ -61,6 +61,7 @@ body {
     color: #111111;
     background: #e7ff2f;
     box-shadow: 0 0 100px #e7ff2f;
+    cursor: pointer;
 }
 
 #name {
