@@ -72,3 +72,22 @@ function use() {
     useSound.volume = 0.5;
     useSound.play();
 }
+
+//change background video
+
+let currentSong = 1;
+
+function changeBg() {
+    if (currentSong == 1) {
+        video.src = "video/bg-video2.mp4";
+        currentSong = 2;
+    } else if (currentSong == 2) {
+        video.src = "video/bg-video3.mp4";
+        currentSong = 3;
+    } else if (currentSong == 3) {
+        video.src = "video/bg-video.mp4";
+        currentSong = 1;
+    }
+    video.load();
+    video.play();
+}
