@@ -23,6 +23,29 @@ body {
     z-index: -1;
 }
 
+#buttonChangeVid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #12121277;
+    border: 1px solid #ffffff77;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 1em;
+    transition: 0.3s;
+}
+
+#buttonChangeVid:hover {
+    background-color: #12121299;
+    border-color: #ffffff99;
+    cursor: pointer;
+}
+
+#buttonChangeVid:active {
+    background-color: #121212aa;
+    border-color: #ffffffaa;
+}
+
 #container {
     background-color: #12121277;
     padding: 2.5vh 0;
