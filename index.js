@@ -91,3 +91,20 @@ function changeBg() {
     video.load();
     video.play();
 }
+
+//add custom video
+
+const buttonChangeVid = document.getElementById("buttonChangeVid");
+const customVid = document.getElementById("customVid");
+const submit = document.getElementById("submit");
+
+function validateVid() {
+    const file = customVid.files[0];
+    if (file) {
+        video.src = URL.createObjectURL(file);
+        video.load();
+        video.play();
+    } else {
+        alert("No file chosen");
+    }
+}
