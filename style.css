@@ -136,17 +136,14 @@ body {
 }
 
 #ro {
-    color: yellow;
-    font-size: 1em;
-}
-
-#ro::before {
-    content: "Ro";
     color: blue;
 }
 
-#ro:after {
-    content: "ia";
+#man {
+    color: yellow;
+}
+
+#ia {
     color: red;
 }
 
