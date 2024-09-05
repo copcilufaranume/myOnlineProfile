@@ -108,3 +108,22 @@ function validateVid() {
         alert("No file chosen");
     }
 }
+
+//Romanian Time
+
+function updateTime() {
+    const now = new Date();
+
+    const options = {
+        hour: "2-digit",
+        minute: "2-digit",
+        timeZone: "Europe/Bucharest",
+        hour12: false,
+    };
+    const timeInRomania = now.toLocaleString("en-GB", options);
+    document.getElementById("time").textContent = timeInRomania;
+}
+
+setInterval(updateTime, 30000);
+
+updateTime();
