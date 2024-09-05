@@ -50,6 +50,7 @@ body {
     position: absolute;
     left: 0;
     top: calc(1em + 40px);
+    width: 15em;
     font-size: 1em;
     background-color: #12121277;
     border-radius: 5px;
@@ -145,6 +146,11 @@ body {
 
 #ia {
     color: red;
+}
+
+#timeLocal {
+    font-size: 1.5em;
+    transform: translateY(-1.75em);
 }
 
 .socials {
@@ -255,7 +261,8 @@ body {
         font-size: 1.5em;
     }
 
-    #origin {
+    #origin,
+    #timeLocal {
         font-size: 1.2em;
     }
 
@@ -284,7 +291,8 @@ body {
         font-size: 1.25em;
     }
 
-    #origin {
+    #origin,
+    #timeLocal {
         font-size: 1em;
     }
 
@@ -310,7 +318,8 @@ body {
         font-size: 1em;
     }
 
-    #origin {
+    #origin,
+    #timeLocal {
         font-size: 0.75em;
     }
 
